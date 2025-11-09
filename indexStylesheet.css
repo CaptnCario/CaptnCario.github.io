@@ -1,0 +1,371 @@
+/*FONTS*/
+
+@font-face {
+    font-family: Persona5;
+    src: url(Sources/Fonts/Persona5MenuFontPrototype-Regular.ttf);
+}
+
+@font-face {
+    font-family: Caladea;
+    src: url(Sources/Fonts/Caladea-Regular.ttf);
+}
+
+@font-face {
+    font-family: Franklin;
+    src: url(Sources/Fonts/FRAHV.TTF);
+}
+
+/*Klassen und Ids*/
+
+#nCC{
+    font-family: Franklin;
+    font-size: 27px;
+}
+
+body{
+    background-image: url("Sources/Images/Background.png") ;
+}
+
+
+h3 + .bButton{
+    margin-left: auto;
+
+}
+
+#DownBackground{
+    position: relative;
+    top: 50%;
+}
+
+
+.blackBar{
+    z-index: 100;
+    background-color: black;
+    position:fixed;
+    height: 13%;
+    display: flex;
+    width: auto;
+    
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+
+    /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#bBarBold{
+    font-weight: bold;
+}
+
+.bButton{
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 3%;
+    font-family: 'Caladea', Courier, monospace;
+
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+
+    line-height: 70px;
+    
+}
+
+.boxSocialMedia{
+    z-index: 5;
+    position: relative;
+    top: 690px;
+    height: auto;
+
+}
+
+.boxSocialMedia h1{
+    font-family: 'Grandstander', Courier, monospace;
+}
+
+.btSocialMedia{
+    font-size: 150%;
+    font-family: 'Grandstander', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    
+    
+    line-height: 35px;
+    margin: 35px 20px 40px 0px;
+    padding: 0px 20px 0px 20px;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+
+    transition: 0.2s all ease-in-out;
+}
+
+#twitter{
+    background-color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+    padding-right: 50px;
+    color: white;
+}
+
+#twitter img{
+    max-width: 38px;
+    max-height: 38px;
+    top: 54px;
+    position:absolute;
+    margin: auto;
+}
+
+#bluesky{
+    background-image: linear-gradient(rgb(10,123,255),rgb(89,186,255));
+    border-color: rgb(37,197,223);
+    padding-right: 40px;
+    color: white;
+}
+
+#bluesky img{
+    max-width: 25px;
+    max-height: 25px;
+    top: 57px;
+    position:absolute;
+    margin: auto;
+}
+
+#instagramm{
+    background-color: white;
+    border-color: black;
+    padding-right: 40px;
+    color: black;
+}
+
+#instagramm img{
+    max-width: 22px;
+    max-height: 22px;
+    top: 58px;
+    position:absolute;
+    margin: auto;
+}
+
+#youtube{
+    background-color: red;
+    border-color: red;
+    padding-right: 50px;
+    color: white;
+}
+
+#youtube img{
+    max-width: 27px;
+    max-height: 27px;
+    top: 55px;
+    position:absolute;
+    margin: auto;
+}
+
+#sayHello{
+    font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
+    
+    line-height: 35px;
+    margin: 35px 20px 40px 0px;
+    padding: 0px 20px 0px 20px;
+
+    border-style: solid;
+    border-color: blueviolet;
+    border-radius: 50px;
+
+    transition: 0.2s all ease-in-out;
+}
+
+.mainBox1{
+    top: 80px;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin-left: -10px;
+    background-color: black;
+    overflow: hidden;
+    
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: thick;
+}
+
+.Balken{
+    height: 600px;
+    position: absolute;
+    display: flex;
+    width: 100px;
+    left: 37.2%;
+
+    z-index: 8;
+    background-color: black;
+    float: right;
+    transform: skewX(10deg)
+
+}
+
+#profilbild{
+    width: 25%;
+    top: 15%;
+    left: 30%;
+    position: relative;
+}
+
+.mainText{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    right: 7%;
+    font-size: 30px;
+}
+
+
+.whiteBox{
+    z-index: 4;
+    background: linear-gradient(-110deg,red 450px,transparent 0);
+    background-image: url(Sources/Images/whiteSkillTree_repeat.png);
+    animation: animate 30s linear;
+    animation-iteration-count: infinite;
+    background-repeat: repeat;
+    width: 40%;
+}
+
+.diashow img{
+    position: absolute;
+    transition: 3s opacity ease-in-out;
+
+}
+
+.diashow{
+    vertical-align: center;
+    position: relative;
+    margin: auto;
+    width: 60%;
+    min-height: 700px;
+    float: right;
+
+    /* transform: skewX(10deg) */
+}
+
+
+.knowledgeAexample{
+    z-index: 6;
+    position: relative;
+    right: 50px;
+    top: 700px;
+    height: auto;
+}
+
+.knowledge img{
+    width: 95%;
+    height: 60%;
+    animation: fadeIn 3s; /* Muss nochmal überarbeitet werden*/
+}
+
+.knowledge{
+    float: left;
+    width: 1000px;
+}
+
+#Balken2{
+    height: 900px;
+    position: relative;
+    width: 10px;
+    left: 0%;
+    top: 80%;
+    background-color: black;
+    float: left;
+    border-radius: 5px;
+}
+
+.example{
+    top: 110%;
+    float: left;
+    left: 55%;
+    position: absolute;
+    width: 700px;
+    
+}
+
+.example img{
+    width: 25%;
+    height: 25%;
+}
+
+.diashow_fade{
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+.example h3{
+    float: right;
+    font-size: 40px;
+    margin-bottom: 45px;
+    padding-top: -10%;
+    margin-right: -20%;
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+
+footer{
+    background-color: black;
+    color: rgb(128, 128, 128);
+    position:absolute;
+    height: 13%;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+    top: 200%;
+    left: 0%;
+    right: 0%;
+
+    /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+@keyframes fade{
+    from{ opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes animate {
+    100%{
+        background-position: 1000px 1000px;
+        background-image: url(Sources/Images/whiteSkillTree_repeat.png);
+    }
+    
+}
+
+h1{
+    
+    margin-top: 40px;
+    font-family: 'Persona5';
+    color: black;
+}
+h2{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* Hover*/
+#sayHello:hover{
+
+    background-color: white;
+    color: blueviolet;
+}
