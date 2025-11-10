@@ -37,43 +37,70 @@ h3 + .bButton{
     top: 50%;
 }
 
+/*Schwarzer Balken*/
 
 .blackBar{
     z-index: 100;
-    background-color: black;
-    position:fixed;
-    height: 13%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
     display: flex;
     width: auto;
-    
+    text-align: center;
+    height: auto;
+
     top: 0%;
     left: 0%;
     right: 0%;
     overflow: hidden;
+    text-decoration: none;
 
     /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
+
+li {
+    float: left;
+    list-style-type: none;
+
+}
+ul{
+    padding-left: 1%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bButton{
+    margin: 0%;
+    display: block;
+    padding: 20px 10px;
+
+    font-family: 'Caladea', Courier, monospace;
+
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.bButton:hover{
+    background-color: rgb(182, 0, 0);
+    display: block;
 }
 
 #bBarBold{
     font-weight: bold;
 }
 
-.bButton{
-    background-color: black;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 3%;
-    font-family: 'Caladea', Courier, monospace;
-
-    color: white;
-    font-size: 25px;
-    text-decoration: none;
-
-    line-height: 70px;
-    
+#blackBarIcon{
+    z-index: 101;
+    margin: 0 auto;
+    position: fixed;
+    justify-content: center;
+    object-fit: contain;
+    width: 5%;
 }
+
+/*Schwarzer Balken*/
 
 .boxSocialMedia{
     z-index: 5;
