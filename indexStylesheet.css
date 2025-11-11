@@ -44,20 +44,31 @@ h3 + .bButton{
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     display: flex;
-    width: auto;
     text-align: center;
-    height: auto;
 
-    top: 0%;
-    left: 0%;
-    right: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
     text-decoration: none;
 
     /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
+.invisibleBar {
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    min-width: 1000px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
 
 li {
     float: left;
@@ -71,7 +82,7 @@ ul{
 }
 
 .bButton{
-    margin: 0%;
+    margin: 0;
     display: block;
     padding: 20px 10px;
 
@@ -92,12 +103,8 @@ ul{
 }
 
 #blackBarIcon{
-    z-index: 101;
-    margin: 0 auto;
-    position: fixed;
-    justify-content: center;
     object-fit: contain;
-    width: 5%;
+    width: 69px;
 }
 
 /*Schwarzer Balken*/
@@ -121,8 +128,8 @@ ul{
     
     
     line-height: 35px;
-    margin: 35px 20px 40px 0px;
-    padding: 0px 20px 0px 20px;
+    margin: 35px 20px 40px 0;
+    padding: 0 20px 0 20px;
 
     border-style: solid;
     border-color: white;
@@ -195,8 +202,8 @@ ul{
     font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
     
     line-height: 35px;
-    margin: 35px 20px 40px 0px;
-    padding: 0px 20px 0px 20px;
+    margin: 35px 20px 40px 0;
+    padding: 0 20px 0 20px;
 
     border-style: solid;
     border-color: blueviolet;
@@ -356,7 +363,7 @@ footer{
     right: 0%;
 
     /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 
 }
 
