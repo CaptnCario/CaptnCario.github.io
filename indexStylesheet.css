@@ -109,7 +109,9 @@ ul{
 }
 
 .IconBar{
-    
+    width: 60px;
+    position: relative;
+    margin-right: 0px;
 }
 
 /*Schwarzer Balken*/
