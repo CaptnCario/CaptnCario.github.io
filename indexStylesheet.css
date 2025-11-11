@@ -57,10 +57,10 @@ h3 + .bButton{
 }
 
 .invisibleBar {
-    z-index: 101;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0);
     margin: 0 auto;
-    min-width: 1000px;
+    min-width: 930px;
     top: 0;
     left: 0;
     right: 0;
