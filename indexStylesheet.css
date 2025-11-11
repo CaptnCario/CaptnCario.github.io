@@ -106,99 +106,9 @@ ul{
 #blackBarIcon{
     object-fit: contain;
     width: 69px;
-
 }
 
 /*Schwarzer Balken*/
-
-.boxSocialMedia{
-    z-index: 5;
-    position: relative;
-    top: 690px;
-    height: auto;
-
-}
-
-.boxSocialMedia h1{
-    font-family: 'Grandstander', Courier, monospace;
-}
-
-.btSocialMedia{
-    font-size: 150%;
-    font-family: 'Grandstander', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    
-    
-    line-height: 35px;
-    margin: 35px 20px 40px 0;
-    padding: 0 20px 0 20px;
-
-    border-style: solid;
-    border-color: white;
-    border-radius: 50px;
-
-    transition: 0.2s all ease-in-out;
-}
-
-#twitter{
-    background-color: rgb(29, 161, 242);
-    border-color: rgb(29, 161, 242);
-    padding-right: 50px;
-    color: white;
-}
-
-#twitter img{
-    max-width: 38px;
-    max-height: 38px;
-    top: 54px;
-    position:absolute;
-    margin: auto;
-}
-
-#bluesky{
-    background-image: linear-gradient(rgb(10,123,255),rgb(89,186,255));
-    border-color: rgb(37,197,223);
-    padding-right: 40px;
-    color: white;
-}
-
-#bluesky img{
-    max-width: 25px;
-    max-height: 25px;
-    top: 57px;
-    position:absolute;
-    margin: auto;
-}
-
-#instagramm{
-    background-color: white;
-    border-color: black;
-    padding-right: 40px;
-    color: black;
-}
-
-#instagramm img{
-    max-width: 22px;
-    max-height: 22px;
-    top: 58px;
-    position:absolute;
-    margin: auto;
-}
-
-#youtube{
-    background-color: red;
-    border-color: red;
-    padding-right: 50px;
-    color: white;
-}
-
-#youtube img{
-    max-width: 27px;
-    max-height: 27px;
-    top: 55px;
-    position:absolute;
-    margin: auto;
-}
 
 #sayHello{
     font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
