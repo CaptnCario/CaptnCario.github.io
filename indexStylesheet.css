@@ -110,15 +110,14 @@ h3 + .bButton{
 
 .IconBar{
     width: 60px;
-    position: relative;
-    margin-right: 0px;
 }
 
 .BarRight{
     float: right;
-    position: relative;
+    position: fixed;
     text-align: right;
-    right: 0px;
+    right: 0;
+    padding-right: 1%;
 }
 
 .blackBar .BarRight li{
@@ -127,7 +126,8 @@ h3 + .bButton{
     position: relative;
     margin-right: 0%;
     list-style-type: none;
-    margin-right: 0px;
+    margin: 0px;
+        object-fit: contain;
 }
 
 /*Schwarzer Balken*/
