@@ -145,9 +145,6 @@ h3 + .bButton{
 
 /*---------------Schwarzer Balken ENDE----------------*/
 
-
-
-
 #sayHello{
     font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
     
@@ -160,22 +157,6 @@ h3 + .bButton{
     border-radius: 50px;
 
     transition: 0.2s all ease-in-out;
-}
-
-.mainBox1{
-    top: 80px;
-    height: 600px;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    margin-left: -10px;
-    background-color: black;
-    overflow: hidden;
-    
-    border: 1px solid black;
-    outline-style: solid;
-    outline-color: black;
-    outline-width: thick;
 }
 
 .Balken{
@@ -226,11 +207,13 @@ h3 + .bButton{
 
 .diashow{
     vertical-align: center;
-    position: relative;
-    margin: auto;
-    width: 60%;
-    min-height: 700px;
-    float: right;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
 
     /* transform: skewX(10deg) */
 }
@@ -253,17 +236,6 @@ h3 + .bButton{
 .knowledge{
     float: left;
     width: 1000px;
-}
-
-#Balken2{
-    height: 900px;
-    position: relative;
-    width: 10px;
-    left: 0%;
-    top: 80%;
-    background-color: black;
-    float: left;
-    border-radius: 5px;
 }
 
 .example{
