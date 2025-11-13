@@ -109,17 +109,16 @@ h3 + .bButton{
 }
 
 .IconBar{
-    width: 40px;
+    width: 35px;
     opacity: 0.5;
     overflow: hidden;
 }
 
 .BarRight{
-    display: flex;
     position: fixed;
     right: 0;
     padding-right: 1%;
-    margin-top: 00px;
+    margin-top: 5px;
     margin-left: 460px;
     align-items: center;
 }
@@ -138,9 +137,9 @@ h3 + .bButton{
 
 .IconBar:hover{
     opacity: 1;
-    animation: shake 0.5s;     
+    animation: shake 0.8s;     
     animation-iteration-count: infinite;
-    width: 50px;
+    width: 40px;
     overflow: hidden;
 }
 
@@ -338,17 +337,17 @@ footer{
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+  50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+  60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+  70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+  80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+  90% { transform: translate(0.5px, 1px) rotate(0deg); }
+  100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
 
 
