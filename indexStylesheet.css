@@ -333,9 +333,7 @@ footer{
     background-color: black;
     float: right;
     transform: skewX(10deg)
-
 }
-
 
 @keyframes fadeIn {
     0% { opacity: 0; }
