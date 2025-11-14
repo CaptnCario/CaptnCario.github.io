@@ -51,6 +51,7 @@ h3 + .bButton{
     right: 0;
     overflow: hidden;
     text-decoration: none;
+    filter: blur(0.5px);
 
     /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
     box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
@@ -106,9 +107,11 @@ h3 + .bButton{
 #blackBarIcon{
     object-fit: contain;
     width: 69px;
+    z-index: 109;
 }
 
 .IconBar{
+    z-index: 109;
     width: 35px;
     opacity: 0.5;
     overflow: hidden;
@@ -144,6 +147,56 @@ h3 + .bButton{
 }
 
 /*---------------Schwarzer Balken ENDE----------------*/
+/*---------------Diashow START------------------------*/
+
+
+.diashow img{
+    position: absolute;
+    transition: 3s opacity ease-in-out;
+
+}
+
+.diashow{
+    z-index: 1;
+    vertical-align: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+
+    /* transform: skewX(10deg) */
+}
+
+.diashowForeground{
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(12, 0, 11, 0.8); 
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+/*---------------Diashow Foreground Icons---------------*/
+
+#profilbild{
+    justify-content: center;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.mainText{
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*---------------Diashow ENDE--------------------------*/
 
 #sayHello{
     font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
@@ -173,21 +226,6 @@ h3 + .bButton{
 
 }
 
-#profilbild{
-    width: 25%;
-    top: 15%;
-    left: 30%;
-    position: relative;
-}
-
-.mainText{
-    position: relative;
-    top: 10%;
-    text-align: center;
-    right: 7%;
-    font-size: 30px;
-}
-
 
 .whiteBox{
     z-index: 4;
@@ -197,25 +235,6 @@ h3 + .bButton{
     animation-iteration-count: infinite;
     background-repeat: repeat;
     width: 40%;
-}
-
-.diashow img{
-    position: absolute;
-    transition: 3s opacity ease-in-out;
-
-}
-
-.diashow{
-    vertical-align: center;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100px;
-
-    /* transform: skewX(10deg) */
 }
 
 
@@ -322,16 +341,14 @@ footer{
   100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
 
-
-
 h1{
     
     margin-top: 40px;
     font-family: 'Persona5';
-    color: black;
+    color: white;
 }
 h2{
-    color: black;
+    color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
