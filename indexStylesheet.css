@@ -196,6 +196,12 @@ h3 + .bButton{
     font-size: 50px;
 }
 
+#titel{
+    display: inline-block;
+    border-right: 5px solid;
+    letter-spacing: auto;
+}
+
 /*---------------Diashow ENDE--------------------------*/
 
 #sayHello{
