@@ -1,4 +1,38 @@
 
+document.addEventListener("DOMContentLoaded", () => {
+    const app = document.getElementById('typewriter');
+
+    const typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 100,
+        deleteSpeed: 50,
+    });
+
+    typewriter
+        .typeString('Programmierer')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Web Designer')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Video Editor')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Designer')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Game Designer')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('3D Artist')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Modder')
+        .pauseFor(2000)
+        .deleteAll()
+        .start();
+});
+
 const namen = new Array("Programmierer", "Web - Designer", "Video Editor", "Designer", "Game Designer", "3D Artist", "Modder");
 setInterval(displayName, 4000);
 var iSlides = 0;
@@ -39,3 +73,4 @@ function showSlides() {
     setTimeout(showSlides,9000);
 
 }
+

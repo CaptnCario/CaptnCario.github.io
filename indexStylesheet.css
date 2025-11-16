@@ -201,6 +201,7 @@ h3 + .bButton{
 }
 
 .mainText{
+    display: flex;
     z-index: 3;
     justify-content: center;
     text-align: center;
@@ -212,6 +213,24 @@ h3 + .bButton{
     display: inline-block;
     border-right: 5px solid;
     letter-spacing: auto;
+}
+
+/*--------Typewriter Text-------------*/
+
+#typewriter {
+  padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blinkCursor 0.7s infinite;
+  margin-left: 10px;
+  color: rgb(219, 14, 219);
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /*---------------Diashow ENDE--------------------------*/
@@ -237,7 +256,7 @@ h3 + .bButton{
     */
 }
 
-
+/*
 .knowledgeAexample{
     z-index: 6;
     position: relative;
@@ -250,8 +269,8 @@ h3 + .bButton{
     width: 95%;
     height: 60%;
     animation: fadeIn 3s; /* Muss nochmal überarbeitet werden*/
-}
 
+/*
 .knowledge{
     float: left;
     width: 1000px;
@@ -270,12 +289,12 @@ h3 + .bButton{
     width: 25%;
     height: 25%;
 }
-
+*/
 .diashow_fade{
     animation-name: fade;
     animation-duration: 3s;
 }
-
+/*
 .example h3{
     float: right;
     font-size: 40px;
@@ -287,6 +306,7 @@ h3 + .bButton{
     text-align: center;
     text-shadow: 2px 2px white;
 }
+*/
 
 footer{
     background-color: black;
@@ -386,120 +406,3 @@ h2{
     color: blueviolet;
 }
 
-/*--------Typewriter Text-------------*/
-
-.titel1{
-    animation: titelText1;
-    animation-timing-function: steps(13, end);
-}
-
-.titel2{
-    animation: titelText2;
-    animation-timing-function: steps(12, end);
-}
-
-.titel3{
-    animation: titelText3;
-    animation-timing-function: steps(12, end);
-}
-
-.titel4{
-    animation: titelText4;
-    animation-timing-function: steps(8, end);
-}
-
-.titel5{
-    animation: titelText5;
-    animation-timing-function: steps(13, end);
-}
-
-.titel6{
-    animation: titelText6;
-    animation-timing-function: steps(9, end);
-}
-
-.titel7{
-    animation: titelText7;
-    animation-timing-function: steps(6, end);
-}
-
-.titel1, .titel2, .titel3, .titel4, .titel5, .titel6, .titel7{
-    position: relative;
-    display: inline-block;
-    letter-spacing: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    animation-duration: 14s;
-    animation-iteration-count: infinite;
-}
-
-.titel1::after, .titel2::after, .titel3::after, .titel4::after, .titel5::after, .titel6::after, .titel7::after{
-    content:"";
-    position: absolute;
-    border-right: 5px solid;
-    overflow: hidden;
-    width: 0;
-}
-
-@keyframes titelText1 {
-  0%, 14.28%, 100% {
-    width: 0;
-  }
-  4.76%, 9.52% {
-    width: 7em;
-  }
-}
-
-@keyframes titelText2 {
-  0%, 14.28%, 28.57%, 100% {
-    width: 0;
-  }
-  19.04%, 23.80% {
-    width: 6.5em;
-  }
-}
-
-@keyframes titelText3 {
-  0%, 28.57%, 42.85%, 100% {
-    width: 0;
-  }
-  33.33%, 38.09% {
-    width: 5.5em;
-  }
-}
-
-@keyframes titelText4 {
-  0%, 42.85%, 57.14%, 100% {
-    width: 0;
-  }
-  47.61%, 52.38% {
-    width: 4em;
-  }
-}
-
-@keyframes titelText5 {
-  0%, 57.14%, 71.42%, 100% {
-    width: 0;
-  }
-  61.90%, 66.67% {
-    width: 7em;
-  }
-}
-
-@keyframes titelText6 {
-  0%, 71.42%, 85.71%, 100% {
-    width: 0;
-  }
-  76.19%, 80.95% {
-    width: 4em;
-  }
-}
-
-@keyframes titelText7 {
-  0%, 85.71%, 100% {
-    width: 0;
-  }
-  90.47%, 95.23% {
-    width: 3.5em;
-  }
-} 
