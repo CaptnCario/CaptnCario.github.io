@@ -302,7 +302,9 @@ h3{
     background-color: green;
     width: 30%;
     height: 100vh;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
 }
 
 .wIcons{
@@ -311,7 +313,7 @@ h3{
     overflow: hidden;
     width: 300px;
     height: 200px;
-    margin: 50px 10px 50px 10px;
+    margin-top: 50px;
 }
 /*-------------Website Teil 2 Ende----------------------*/
 
