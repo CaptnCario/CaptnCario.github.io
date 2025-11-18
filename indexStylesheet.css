@@ -256,6 +256,7 @@ h3 + .bButton{
 
 .wPicBox{    
     position: relative;
+    
     background-color: white;
     background-image: url(Sources/Images/Background.png);
     width: 50%;
@@ -301,6 +302,10 @@ h3{
     background-color: green;
     width: 30%;
     height: 100vh;
+}
+
+.wIcons{
+    
 }
 /*-------------Website Teil 2 Ende----------------------*/
 
