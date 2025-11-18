@@ -302,10 +302,16 @@ h3{
     background-color: green;
     width: 30%;
     height: 100vh;
+    align-items: center;
 }
 
 .wIcons{
-    
+    position: relative;
+    background-color: blue;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    margin: 50px 10px 50px 10px;
 }
 /*-------------Website Teil 2 Ende----------------------*/
 
