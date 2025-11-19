@@ -299,17 +299,17 @@ h3{
 
 .wIcoBox{
     position: relative;
-    background-color: green;
+    background-color: white;
     width: 30%;
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
+    border-left: 5px dashed rgba(0, 0, 0, 0.2);
 }
 
 .wIcons{
     position: relative;
-    background-color: blue;
     overflow: hidden;
     width: 250px;
     height: 250px;
