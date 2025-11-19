@@ -303,8 +303,16 @@ h3{
     width: 30%;
     height: 100vh;
     display: grid;
-    grid-template-columns: auto;
     justify-content: center;
+}
+
+.wIcoBox::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5%;  
+    height: 90%;  
+    width: 0;
     border-left: 5px dashed rgba(0, 0, 0, 0.2);
 }
 
