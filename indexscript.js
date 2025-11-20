@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     typewriter
-        .typeString('Programmierer')
+        .typeString('Junior Developer')
         .pauseFor(2000)
         .deleteAll()
         .typeString('Web Designer')
@@ -70,16 +70,19 @@ document.addEventListener("DOMContentLoaded", () => {
         .typeString('Video Editor')
         .pauseFor(2000)
         .deleteAll()
-        .typeString('Designer')
+        .typeString("Graphics Designer")
         .pauseFor(2000)
         .deleteAll()
         .typeString('Game Designer')
         .pauseFor(2000)
         .deleteAll()
-        .typeString('3D Artist')
+        .typeString('2D/3D Artist')
         .pauseFor(2000)
         .deleteAll()
         .typeString('Modder')
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString('Network Guy')
         .pauseFor(2000)
         .deleteAll()
         .start();

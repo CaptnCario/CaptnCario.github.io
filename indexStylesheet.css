@@ -15,12 +15,12 @@
     src: url(Sources/Fonts/FRAHV.TTF);
 }
 
-/*Klassen und Ids*/
-
-#nCC{
-    font-family: Franklin;
-    font-size: 27px;
+@font-face {
+    font-family: Bebas Neue;
+    src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
+
+/*Klassen und Ids*/
 
 body{
     background-image: url("Sources/Images/Background.png") ;
@@ -29,7 +29,6 @@ body{
 
 h3 + .bButton{
     margin-left: auto;
-
 }
 
 #DownBackground{
@@ -83,6 +82,11 @@ h3 + .bButton{
     margin-top: 0;
 }
 
+.BarLeft a{
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+}
+
 .bButton{
     margin: 0;
     display: block;
@@ -96,7 +100,7 @@ h3 + .bButton{
 }
 
 .bButton:hover{
-    background-color: rgb(182, 0, 0);
+    background-color: rgb(126, 2, 126);
     display: block;
 }
 
