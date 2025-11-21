@@ -25,6 +25,20 @@
     src: url(Fonts/Casino/Casino3D.ttf);
 }
 
+@font-face {
+    font-family: ZTNature;
+    src: url(Fonts/ZTNature/ZTNature-Medium.ttf);
+}
+
+@font-face {
+    font-family: BoldZTNature;
+    src: url(Fonts/ZTNature/ZTNature-Black.ttf);
+}
+
+@font-face {
+    font-family: LightZTNature;
+    src: url(Fonts/ZTNature/ZTNature-Thin.ttf);
+}
 /*Klassen und Ids*/
 
 h1{
@@ -35,6 +49,11 @@ h1{
     font-size: 80px;
 }
 
+h2{
+    font-size: 50px;
+    font-family: BoldZTNature;
+    letter-spacing: 2px;
+}
 
 body{
     background-image: url("Sources/Images/Background.png") ;
@@ -224,10 +243,6 @@ h3 + .bButton{
     z-index: 3;
     justify-content: center;
     text-align: center;
-}
-
-h2{
-    font-size: 50px;
 }
 
 #titel{
@@ -562,10 +577,6 @@ footer{
   100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
 
-h2{
-    color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
 
 /* Hover*/
 #sayHello:hover{
