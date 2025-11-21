@@ -51,8 +51,18 @@ h1{
 
 h2{
     font-size: 50px;
-    font-family: BoldZTNature;
+    font-family: BoldZTNature , 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
+}
+
+h3{
+    font-size: 100px;
+    margin-bottom: 0; 
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
 }
 
 body{
@@ -62,6 +72,7 @@ body{
 
 h3 + .bButton{
     margin-left: auto;
+    
 }
 
 #DownBackground{
@@ -323,14 +334,16 @@ h3 + .bButton{
     height: 100vh;
     justify-content: center;
 
-    font-size: 30px;
+    font-size: 28px;
     align-items: center;
-    font-family: roboto;
+    line-height: 50px;
+    text-align: center;
 }
 
-h3{
-    font-size: 100px;
-    margin-bottom: 0;
+.wTxtBox p{
+    font-family: ZTNature , 'Arial Narrow Bold', sans-serif;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .wIcoBox{
