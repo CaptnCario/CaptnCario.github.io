@@ -1,11 +1,6 @@
 /*FONTS*/
 
 @font-face {
-    font-family: Persona5;
-    src: url(Sources/Fonts/Persona5MenuFontPrototype-Regular.ttf);
-}
-
-@font-face {
     font-family: Caladea;
     src: url(Sources/Fonts/Caladea-Regular.ttf);
 }
@@ -62,7 +57,7 @@ h3{
     align-items: center;
     display: flex;
 
-    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body{
@@ -72,7 +67,6 @@ body{
 
 h3 + .bButton{
     margin-left: auto;
-    
 }
 
 #DownBackground{
@@ -305,7 +299,9 @@ h3 + .bButton{
     position: relative;
     
     background-color: white;
-    background-image: url(Sources/Images/Background.png);
+    background-image: url(Sources/Images/StarsGIFNew.gif);
+    background-size: 1500px;
+    background-position: -400px -100px;
     width: 50%;
     height: 100vh;
     /*border-bottom: 10px solid black;*/
@@ -315,6 +311,7 @@ h3 + .bButton{
     100% 100%, /* rechts unten */
     0 100%     /* links unten */
   ); 
+  
 }
 
 .wPicBox img{    
@@ -336,14 +333,14 @@ h3 + .bButton{
 
     font-size: 28px;
     align-items: center;
-    line-height: 50px;
+    /*line-height: 50px;*/
     text-align: center;
 }
 
 .wTxtBox p{
     font-family: ZTNature , 'Arial Narrow Bold', sans-serif;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .wIcoBox{
@@ -370,9 +367,12 @@ h3 + .bButton{
     overflow: hidden;
     width: 250px;
     height: 250px;
-    margin-top: 50px;
+    margin-top: 40px;
     justify-content: center;
     display: grid;
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .wIcons img{
@@ -534,7 +534,6 @@ footer{
     font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
     
     line-height: 35px;
-    margin: 35px 20px 40px 0;
     padding: 0 20px 0 20px;
 
     border-style: solid;
@@ -542,6 +541,9 @@ footer{
     border-radius: 50px;
 
     transition: 0.2s all ease-in-out;
+    color: black;
+    text-decoration: none;
+    margin-top: 0px;
 }
 
 .Balken{
