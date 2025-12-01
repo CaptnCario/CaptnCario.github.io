@@ -1,11 +1,6 @@
 /*FONTS*/
 
 @font-face {
-    font-family: Persona5;
-    src: url(Sources/Fonts/Persona5MenuFontPrototype-Regular.ttf);
-}
-
-@font-face {
     font-family: Caladea;
     src: url(Sources/Fonts/Caladea-Regular.ttf);
 }
@@ -15,11 +10,54 @@
     src: url(Sources/Fonts/FRAHV.TTF);
 }
 
+@font-face {
+    font-family: Bebas Neue;
+    src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Casino;
+    src: url(Fonts/Casino/Casino3D.ttf);
+}
+
+@font-face {
+    font-family: ZTNature;
+    src: url(Fonts/ZTNature/ZTNature-Medium.ttf);
+}
+
+@font-face {
+    font-family: BoldZTNature;
+    src: url(Fonts/ZTNature/ZTNature-Black.ttf);
+}
+
+@font-face {
+    font-family: LightZTNature;
+    src: url(Fonts/ZTNature/ZTNature-Thin.ttf);
+}
 /*Klassen und Ids*/
 
-#nCC{
-    font-family: Franklin;
-    font-size: 27px;
+h1{
+    
+    margin-top: 40px;
+    font-family: 'Casino', 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 80px;
+}
+
+h2{
+    font-size: 50px;
+    font-family: BoldZTNature , 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-size: 100px;
+    margin-bottom: 0; 
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 body{
@@ -29,84 +67,126 @@ body{
 
 h3 + .bButton{
     margin-left: auto;
-
 }
+
+#DownBackground{
+    position: relative;
+    top: 50%;
+}
+
+/*Schwarzer Balken*/
 
 .blackBar{
     z-index: 100;
-    background-color: black;
-    position:fixed;
-    height: 13%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
     display: flex;
-    width: auto;
-    
-    top: 0%;
-    left: 0%;
-    right: 0%;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
+    text-decoration: none;
+    filter: blur(0.5px);
 
     /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
 
+.invisibleBar {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+    min-width: 930px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.blackBar .BarLeft li {
+    float: left;
+    list-style-type: none;
+
+}
+.BarLeft{
+    padding-left: 1%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.BarLeft a{
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+.bButton{
+    margin: 0;
+    display: block;
+    padding: 20px 10px;
+
+    font-family: 'Caladea', Courier, monospace;
+
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.bButton:hover{
+    background-color: rgb(126, 2, 126);
+    display: block;
 }
 
 #bBarBold{
     font-weight: bold;
 }
 
-.bButton{
-    background-color: black;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 3%;
-    font-family: 'Caladea', Courier, monospace;
-
-    color: white;
-    font-size: 25px;
-    text-decoration: none;
-
-    line-height: 70px;
+#blackBarIcon{
+    object-fit: contain;
+    width: 69px;
+    z-index: 109;
 }
 
-#sayHello{
-    font-family: 'Franklin', 'Arial Narrow', Arial, sans-serif;
-    
-    line-height: 35px;
-    margin: 35px 20px 40px 0px;
-    padding: 0px 20px 0px 20px;
-
-    border-style: solid;
-    border-color: blueviolet;
-    border-radius: 50px;
-
-    transition: 0.2s all ease-in-out;
+.IconBar{
+    z-index: 109;
+    width: 35px;
+    opacity: 0.5;
+    overflow: hidden;
 }
 
-/* Hover*/
-#sayHello:hover{
-
-    background-color: white;
-    color: blueviolet;
+.BarRight{
+    position: fixed;
+    right: 0;
+    padding-right: 1%;
+    margin-top: 5px;
+    margin-left: 460px;
+    align-items: center;
 }
 
-footer{
-    background-color: black;
-    color: rgb(128, 128, 128);
-    position:absolute;
-    height: 13%;
+.BarRight li{
+    width: 60px;
+    float: left;
+    margin-right: 0%;
+    list-style-type: none;
+    margin: 0px;
     display: flex;
-    width: auto;
-    justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 5px;
+}
 
-    top: 200%;
-    left: 0%;
-    right: 0%;
-
-    /*Wert 1 ist für Ausrichtung, Wert 2 für Abstand, Wert 3 für Weichzeichnung*/
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+.IconBar:hover{
+    opacity: 1;
+    animation: shake 0.8s;     
+    animation-iteration-count: infinite;
+    width: 40px;
+    overflow: hidden;
 }
 
 /*Ab hier beginnt der normale CSS Code, davor ist der Code für die Buttons und Blackbar*/
