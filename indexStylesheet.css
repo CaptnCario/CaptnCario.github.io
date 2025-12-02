@@ -307,8 +307,6 @@ h3 + .bButton{
     top: 100%;
     background-color: white;
     display: flex;
-
-    
 }
 
 .diashow_fade{
@@ -431,6 +429,7 @@ h3 + .bButton{
     height: auto;
     left: 0;
     top: 200%;
+    overflow: hidden;
 }
 
 @mixin flexCenter {
@@ -577,6 +576,7 @@ h3 + .bButton{
 
 /*-------------Website Teil 3 Ende---------------------*/
 footer{
+    z-index: 150;
     background-color: black;
     color: rgb(128, 128, 128);
     position:absolute;
@@ -584,10 +584,10 @@ footer{
     display: flex;
     width: auto;
     justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 
-    top: 200%;
+    top: 5250px;
     left: 0%;
     right: 0%;
 
