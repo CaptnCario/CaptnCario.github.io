@@ -56,6 +56,7 @@ h3{
     justify-content: center; 
     align-items: center;
     display: flex;
+    color: rgb(219, 14, 219);
 
     font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -66,9 +67,8 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
 
-    /* ❗ WICHTIG für dein Hover-Background */
+    /* WICHTIG für dein Hover-Background */
     transition: background-image 0.4s ease-in-out;
     background-size: cover;
     background-position: center;
@@ -203,6 +203,55 @@ h3 + .bButton{
 }
 
 /*---------------Schwarzer Balken ENDE----------------*/
+/*DIASHOW*/
+.diashow img{
+    position: absolute;
+    transition: 3s opacity ease-in-out;
+
+}
+
+.diashow{
+    z-index: -31;
+    vertical-align: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+
+    margin: 0;
+    padding: 0;
+
+    background-image: url('Sources/Images/slideshow/Slideshow-min.png');
+    background-repeat: repeat-x;     
+    background-size: auto;
+
+    animation: scrollbg 180s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scrollbg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -19200px 0;
+  }
+}
+
+.diashowForeground{
+    z-index: -31;
+    position: fixed;
+    background-color: rgba(12, 0, 11, 0.8); 
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+/*Diashow Ende*/
 
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
@@ -320,10 +369,8 @@ img {
 h1,
 h2,
 h3 {
-    font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--white);
 }
 
 .heading-primary {
@@ -528,6 +575,10 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__text {
     flex: 0 0 30%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border:  3px  solid white;
+    padding: 20px;
 }
 
 .work__list {
@@ -601,13 +652,18 @@ body:not(.user-is-tabbing) a:focus {
 
 #bg-overlay {
     position: fixed;
-    inset: 0;
+    top: 50%;
+    left: 50%;
+    width: 120vw;   /* breiter als Bildschirm */
+    height: 120vh;  /* höher als Bildschirm */
+    transform: translate(-50%, -50%); /* zentriert */
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    filter: blur(30px);
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
     z-index: -1;
-    filter: blur(20px);
 }
