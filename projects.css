@@ -291,7 +291,7 @@ h3 + .bButton{
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: rgb(219, 14, 219);
+    --pink: rgb(219, 14, 219) ;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
