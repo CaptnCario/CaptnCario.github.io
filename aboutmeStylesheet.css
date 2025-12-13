@@ -244,6 +244,8 @@ h3 + .bButton{
     font-size: 25px;
     margin-right: 3%;
     line-height: 180%;
+    /* NEU: Maximale Breite festlegen */
+    max-width: 70%; 
 }
 .Box1 .ImgBox1{
     position: relative;
@@ -252,12 +254,13 @@ h3 + .bButton{
     float: left;
     margin: 20px;
     height: 250px;
-    width: 280px;
+    width: 250px;
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
 }
-
 .ImgBox1:hover{
     transform: scale(1.1);
     
@@ -292,7 +295,7 @@ h3 + .bButton{
 
     align-items: center;
     position: absolute;
-    top: 450px;
+    top: 470px;
     margin: 3%;
     width: 45%;
 
@@ -302,30 +305,52 @@ h3 + .bButton{
     
 }
 .Box2Text {
-
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     margin-right: 3%;
     line-height: 180%;
+    /* NEU: Maximale Breite festlegen */
+    max-width: 60%; 
 }
-.Box2 img{
+
+.Box2 .ImgBox2{
     position: relative;
+    background-image: url("Sources/Images/Pixelart.png");
+    background-size: cover;
     float: left;
-    
     margin: 20px;
+    height: 150px;
     width: 150px;
     vertical-align: middle;
     border-radius: 40%;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
 }
 
-.Box2 img:hover{
+.ImgBox2:hover{
+    transform: scale(1.1);
+}
 
-    object-fit: contain;
-    content: url("Sources/Images/Pixelart.png");
-    transform: scale(1.05);
-    opacity: 0.9;
+.ImgBox2::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 40%;
+    background-image: url("Sources/Images/Keyblade.jpg");
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ImgBox2:hover::before {
+  opacity: 0;
 }
 
 /*BOX2  ENDE */
@@ -338,7 +363,7 @@ h3 + .bButton{
     align-items: center;
 
     position: absolute;
-    top: 450px;
+    top: 470px;
     right: 0%;
     margin: 3%;
     width: 45%;
@@ -355,22 +380,44 @@ h3 + .bButton{
     margin-right: 3%;
     line-height: 180%;
 }
-.Box3 img{
+
+.Box3 .ImgBox3{
     position: relative;
+    background-image: url("Sources/Images/Monitor\ und\ Tastatur.png");
+    background-size: cover;
     float: left;
-    
     margin: 20px;
+    height: 150px;
     width: 150px;
     vertical-align: middle;
     border-radius: 40%;
-    transition: .5s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
 }
 
-.Box3 img:hover{
+.ImgBox3:hover{
+    transform: scale(1.1);
+}
 
-    object-fit: contain;
-    content: url("Sources/Images/Monitor\ und\ Tastatur.png");
+.ImgBox3::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 40%;
+    background-image: url("Sources/Images/Würfel.png");
+    background-size: cover;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ImgBox3:hover::before {
+  opacity: 0;
 }
 
 /*BOX3  ENDE */
@@ -380,7 +427,7 @@ h3 + .bButton{
     z-index: 2;
     background-color: white;
     position: absolute;
-    top: 800px;
+    top: 780px;
     left: 0%;
     margin: 3.5%;
     width: 92.5%;
@@ -400,22 +447,43 @@ h3 + .bButton{
     margin-right: 3%;
     line-height: 180%;
 }
-.Box4 img{
+
+.Box4 .ImgBox4{
     position: relative;
+    background-image: url("Sources/Images/Pokedex.png");
+    background-size: cover;
     float: left;
-    
     margin: 20px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     vertical-align: middle;
     border-radius: 40%;
-    transition: .5s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
+}
+.ImgBox4:hover{
+    transform: scale(1.1);
 }
 
-.Box4 img:hover{
-
-    object-fit: contain;
-    content: url("Sources/Images/Pokedex.png");
+.ImgBox4::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 40%;
+    background-image: url("Sources/Images/CarioCodePerspective.png");
+    background-size: cover;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ImgBox4:hover::before {
+  opacity: 0;
 }
 
 /*BOX4  ENDE */
@@ -444,22 +512,44 @@ h3 + .bButton{
     margin-right: 3%;
     line-height: 180%;
 }
-.Box5 img{
+
+.Box5 .ImgBox5{
     position: relative;
+    background-image: url("Sources/Images/CarioCharPerspective.png");
+    background-size: cover;
     float: left;
-    
     margin: 20px;
+    height: 150px;
     width: 150px;
     vertical-align: middle;
     border-radius: 40%;
-    transition: .5s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
 }
 
-.Box5 img:hover{
+.ImgBox5:hover{
+    transform: scale(1.1);
+}
 
-    object-fit: contain;
-    content: url("Sources/Images/CarioCharPerspective.png");
+.ImgBox5::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 40%;
+    background-image: url("Sources/Images/5\ Jubiläum\ POKUSAN.png");
+    background-size: cover;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ImgBox5:hover::before {
+  opacity: 0;
 }
 
 /*BOX5  ENDE */
@@ -490,24 +580,44 @@ h3 + .bButton{
     margin-right: 3%;
     line-height: 180%;
 }
-.Box6 img{
+.Box6 .ImgBox6{
     position: relative;
+    background-image: url("Sources/Images/IMG_20240528_212936.jpg");
+    background-size: cover;
     float: left;
-    
     margin: 20px;
+    height: 150px;
     width: 150px;
     vertical-align: middle;
     border-radius: 40%;
-    transition: .5s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
 }
 
-.Box6 img:hover{
+.ImgBox6:hover{
+    transform: scale(1.1);
+}
 
-    object-fit: contain;
-    content: url("Sources/Images/IMG_20240528_212936.jpg");
+.ImgBox6::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 40%;
+    background-image: url("Sources/Images/A\ Hat\ in\ Time.png");
+    background-size: cover;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
+.ImgBox6:hover::before {
+  opacity: 0;
+}
 /*BOX6  ENDE */
 
 /*BOX7  START */
@@ -535,25 +645,43 @@ h3 + .bButton{
     margin-right: 3%;
     line-height: 180%;
 }
-.Box7 img{
-    position:relative;
-
+.Box7 .ImgBox7{
+    position: relative;
+    background-image: url("Sources/Images/htlMödling.jpg");
+    background-size: cover;
     float: left;
     margin: 20px;
-    
-    height: 10%;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     vertical-align: middle;
-
-    transition: .5s ease-in-out;
+    border-radius: 40%;
+    transition: transform 0.4s ease-in-out;
+    /* NEU: Verhindert Schrumpfen im Flex-Container */
+    flex-shrink: 0; 
+}
+.ImgBox7:hover{
+    transform: scale(1.1);
 }
 
-.Box7 img:hover{
-
-    object-fit: contain;
-    content: url("Sources/Images/htlMödling.jpg");
+.ImgBox7::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
     border-radius: 40%;
+    background-image: url("Sources/Images/htlmödlinglogo.png");
+    background-color: white;
+    background-size: cover;
     opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ImgBox7:hover::before {
+  opacity: 0;
 }
 
 /*BOX7  ENDE */
