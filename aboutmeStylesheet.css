@@ -244,7 +244,6 @@ h3 + .bButton{
     font-size: 25px;
     margin-right: 3%;
     line-height: 180%;
-    /* NEU: Maximale Breite festlegen */
     max-width: 70%; 
 }
 .Box1 .ImgBox1{
@@ -258,7 +257,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 .ImgBox1:hover{
@@ -310,7 +308,6 @@ h3 + .bButton{
     font-size: 20px;
     margin-right: 3%;
     line-height: 180%;
-    /* NEU: Maximale Breite festlegen */
     max-width: 60%; 
 }
 
@@ -325,7 +322,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 
@@ -392,7 +388,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 
@@ -459,7 +454,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 .ImgBox4:hover{
@@ -524,7 +518,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 
@@ -591,7 +584,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 
@@ -656,7 +648,6 @@ h3 + .bButton{
     vertical-align: middle;
     border-radius: 40%;
     transition: transform 0.4s ease-in-out;
-    /* NEU: Verhindert Schrumpfen im Flex-Container */
     flex-shrink: 0; 
 }
 .ImgBox7:hover{
@@ -685,3 +676,17 @@ h3 + .bButton{
 }
 
 /*BOX7  ENDE */
+
+@keyframes shake {
+  0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+  10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+  50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+  60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+  70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+  80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+  90% { transform: translate(0.5px, 1px) rotate(0deg); }
+  100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+}
