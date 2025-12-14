@@ -228,11 +228,12 @@ h3 + .bButton{
 
     background-image: url('Sources/Images/slideshow/Slideshow-min.png');
     background-repeat: repeat-x;     
-    background-size: auto;
+    background-size: cover;
+    background-position: center center;
 
     animation: scrollbg 180s linear infinite;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     filter: blur(5px);
 }
 
@@ -607,7 +608,6 @@ body:not(.user-is-tabbing) a:focus {
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
-        margin: 0 0 0 10rem;
     }
 }
 
