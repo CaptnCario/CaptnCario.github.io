@@ -231,6 +231,7 @@ h3 + .bButton{
 
 /*Ab hier beginnt der normale CSS Code, davor ist der Code für die Buttons und Blackbar*/
 
+
 /*BOX1  START */
 .Box1{
     z-index: 2;
@@ -301,7 +302,7 @@ h3 + .bButton{
 
     align-items: center;
     position: absolute;
-    top: 470px;
+    top: 500px;
     margin: 3%;
     width: 45%;
 
@@ -367,7 +368,7 @@ h3 + .bButton{
     align-items: center;
 
     position: absolute;
-    top: 470px;
+    top: 500px;
     right: 0%;
     margin: 3%;
     width: 45%;
@@ -430,7 +431,7 @@ h3 + .bButton{
     z-index: 2;
     background-color: white;
     position: absolute;
-    top: 780px;
+    top: 800px;
     left: 0%;
     margin: 3.5%;
     width: 92.5%;
@@ -494,7 +495,7 @@ h3 + .bButton{
 .Box5{
     z-index: 2;
     background-color: white;
-    top: 1100px;
+    top: 1120px;
     display: flex;
     align-items: center;
 
@@ -568,7 +569,7 @@ h3 + .bButton{
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset;
 
-    top: 1100px;
+    top: 1120px;
     display: flex;
     align-items: center;
     
@@ -633,7 +634,7 @@ h3 + .bButton{
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset;
     
-    top: 1380px;
+    top: 1390px;
     display: flex;
     align-items: center;
 }
@@ -698,3 +699,9 @@ h3 + .bButton{
   90% { transform: translate(0.5px, 1px) rotate(0deg); }
   100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
+
+
+@media (max-width: 1199px) {
+
+}
+
