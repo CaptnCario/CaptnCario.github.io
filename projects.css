@@ -66,7 +66,6 @@ body {
     font-family: ZTNature , 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     color: var(--white-1);
-    line-height: var(--line-height-normal);
 
     /* WICHTIG für dein Hover-Background */
     transition: background-image 0.4s ease-in-out;
@@ -77,6 +76,9 @@ body {
     overflow-x: hidden;
 }
 
+body .work__box{
+    line-height: var(--line-height-normal);
+}
 
 h3 + .bButton{
     margin-left: auto;
