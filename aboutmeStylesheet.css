@@ -38,10 +38,11 @@
 
 h1{
     
-    margin-top: 40px;
+
     font-family: Bebas Neue, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(219, 14, 219);
     font-size: 80px;
+    line-height: 80px;
 }
 
 h2{
@@ -232,16 +233,29 @@ h3 + .bButton{
 /*Ab hier beginnt der normale CSS Code, davor ist der Code für die Buttons und Blackbar*/
 
 
+.MainBox {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas:
+        "whole whole"
+        "half1 half2"
+        "whole2 whole2"
+        "half3 half4"
+        "whole3 whole3";
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 0 3%;
+}
+
 /*BOX1  START */
 .Box1{
     z-index: 2;
     background-color: white;
-    display: flex;
+    display: block;
+    grid-area: whole;
 
-    position: absolute;
-    top: 50px;
-    margin: 3%;
-    width: 93.5%;
+    position: relative;
+    width: 100%;
     align-items: center;
 
     border-radius: 20px;
@@ -251,9 +265,8 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
-    max-width: 70%; 
 }
 .Box1 .ImgBox1{
     position: relative;
@@ -298,13 +311,12 @@ h3 + .bButton{
 .Box2{
     z-index: 2;
     background-color: white;
-    display: flex;
+    display: block;
+    grid-area: half1;
 
     align-items: center;
-    position: absolute;
-    top: 500px;
-    margin: 3%;
-    width: 45%;
+    position: relative;
+    width: 100%;
 
     border-radius: 20px;
 
@@ -315,9 +327,8 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
-    max-width: 60%; 
 }
 
 .Box2 .ImgBox2{
@@ -364,14 +375,12 @@ h3 + .bButton{
 .Box3{
     z-index: 2;
     background-color: white;
-    display: flex;
+    display: block;
+    grid-area: half2;
+    
     align-items: center;
-
-    position: absolute;
-    top: 500px;
-    right: 0%;
-    margin: 3%;
-    width: 45%;
+    position: relative;
+    width: 100%;
     border-radius: 20px;
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset;
@@ -382,7 +391,7 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
 }
 
@@ -430,16 +439,15 @@ h3 + .bButton{
 .Box4{
     z-index: 2;
     background-color: white;
-    position: absolute;
-    top: 800px;
-    left: 0%;
-    margin: 3.5%;
-    width: 92.5%;
+    display: block;
+    grid-area: whole2;
+
+    position: relative;
+    width: 100%;
     border-radius: 20px;
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset;
 
-    display: flex;
     align-items: center;
     
 }
@@ -448,7 +456,7 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
 }
 
@@ -495,13 +503,11 @@ h3 + .bButton{
 .Box5{
     z-index: 2;
     background-color: white;
-    top: 1120px;
-    display: flex;
-    align-items: center;
+    display: block;
+    grid-area: half3;
 
-    position: absolute;
-    margin: 3%;
-    width: 55%;
+    position: relative;
+    width: 100%;
 
     border-radius: 20px;
 
@@ -512,7 +518,7 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
 }
 
@@ -560,17 +566,15 @@ h3 + .bButton{
 .Box6{
     z-index: 2;
     background-color: white;
+    display: block;
+    grid-area: half4;
 
-    position: absolute;
-    right: 0%;
-    margin: 3%;
-    width: 35%;
+    position: relative;
+    width: 100%;
 
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset;
 
-    top: 1120px;
-    display: flex;
     align-items: center;
     
 }
@@ -579,7 +583,7 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
 }
 .Box6 .ImgBox6{
@@ -625,17 +629,15 @@ h3 + .bButton{
 .Box7{
     z-index: 2;
     background-color: white;
+    display: block;
+    grid-area: whole3;
 
-    position: absolute;
-    left: 0%;
-    margin: 3.5%;
-    width: 92.5%;
+    position: relative;
+    width: 100%;
 
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 1) 0px 30px 60px -30px, rgba(0, 0, 0, 0.5) 0px -2px 6px 0px inset;
-    
-    top: 1390px;
-    display: flex;
+
     align-items: center;
 }
 .Box7Text {
@@ -643,7 +645,7 @@ h3 + .bButton{
     color: black;
     font-family: ZTNature, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    margin-right: 3%;
+    margin: 0 3%;
     line-height: 180%;
 }
 .Box7 .ImgBox7{
