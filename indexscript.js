@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     typewriter
-        .typeString('Junior Developer')
+        .typeString('Software Engineer')
         .pauseFor(2000)
         .deleteAll()
         .typeString('Web Designer')
